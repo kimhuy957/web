@@ -1,0 +1,161 @@
+:root{
+    --mau1:rgba(0, 0, 0, 0.993);
+    --mau2:#db2626;
+    --mau3:rgb(250, 23, 7);
+    --mau4:rgb(141, 115, 115);
+    --mau5:rgb(160, 222, 15);
+    --mau6:blue;
+    --mau7:rgb(115, 72, 72);
+    --mau-icon-heaber:rgb(6, 211, 37);
+    --mau-icon-heaber1:rgb(248, 10, 10);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.header{
+min-width: 100px;
+height: 60px;
+display: flex;
+background-color: var(--mau1);
+position: relative;
+}
+.header .logo{
+
+}
+.logo img{
+    margin: 5px 20px ;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.header .nsearch{
+    
+
+    margin: 15px;
+}
+.nsearch .search{
+    height: 30px;
+    width: 300px;
+    z-index: 5;
+    border-style: hidden;
+    border-bottom: 1px solid hotpink;
+    background-color: #cacaca00;
+    border-radius: 50px;
+}
+.nsearch i{
+    margin-bottom: 150px;
+    z-index: 10;
+    margin-left: -30px;
+}
+.header table{
+    margin-left: 350px;
+    text-align: center;
+    width: auto;
+    height: 60px;
+}
+.header   table tr td{
+  cursor: pointer;  
+  width: 100px;
+}
+.header .table-icon table tr td:hover{
+    border-radius: 10%;
+    background-color: rgb(243, 227, 85);
+}
+.header table tr td i{
+    font-size:20px ;
+    color: var(--mau-icon-heaber); 
+    
+}
+
+.header table tr td i:hover{
+    transition: 0.4s;
+    color: var(--mau-icon-heaber1);
+    animation: icond 0.5s linear;
+}
+@-webkit-keyframes icond{
+    0%{
+        transform: rotate(-50deg);
+    }
+    40%{
+        transform: rotate(0deg);
+
+    }
+    80%{
+        transform: rotate(50deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.header .menu-avatar{
+    position: absolute;
+   right: 0%;
+   margin-right: 20px;
+}
+.menu-avatar table tr{
+    width: 150px;
+}
+.menu-avatar table tr .menu{
+
+    width: 50px;
+    height: 50px; 
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    
+}
+
+
+.avatar img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.footer{
+    width: auto;
+    height: 50px;
+    background-color: var(--mau3);
+
+}
+.footer{
+    color: rgb(255, 255, 255);
+
+}
+.footer table{
+    width: 450px;
+    height: 25px;
+}
+.head-link{
+width: 100%;
+height: 100px;
+background-color: aquamarine;
+display: flex;
+
+}
+.head-link .left{
+width: 20%;
+height: 1000px;
+background-color: var(--mau5);
+
+}
+.head-link .content{
+width: 50%;
+height: 1000px;
+background-color: var(--mau6);
+
+}
+.head-link .right{
+width: 30%;
+height: 1000px;
+background-color: var(--mau7);
+}
+.search{
+    color: rgb(234, 224, 43);
+}
+.footer{
+    margin-top: 900px;
+}
