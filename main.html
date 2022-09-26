@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'poppins' , 'sans-serif';
+      box-sizing: border-box;
+  }
+  body {
+      transition: background 0.2s linear;
+      background: rgb(0, 0, 0);
+    }
+  .nav{
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0);
+  }
+  h3{
+    color: white;
+  }
+  nav{
+    padding: 10px 4%;
+    justify-content: space-between;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.986);
+    background: #fff;
+    position: sticky; /*bám dính giao diện*/
+    top: 10;
+    z-index: 10;/*z-index càng cao thì element đó đứng trước và hiện lên trên.*/
+}
+  
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(13, 187, 240, 0.879),
+     -6px 7px 30px 1px rgba(13, 187, 240, 0.879),
+     4px 4px 5px 2px rgba(13, 187, 240, 0.879);
+    outline: none;
+  }
+  .btn-1 {
+    background: black);
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+    .btn-1 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .btn-1:before,
+    .btn-1:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      background: rgb(10, 230, 250);
+      box-shadow:
+       0px 0px 0px 0px rgba(255,255,255,.9),
+       0px 0px 0px 0px rgba(255,255,255,.9),
+       0px 0px 0px 0px rgba(0,0,0,.2),
+       0px 0px 0px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn-1:before{
+       height: 0%;
+       width: 2px;
+    }
+    .btn-1:after {
+      width: 0%;
+      height: 2px;
+    }
+    .btn-1:hover{
+      color: rgb(252, 252, 252);
+      background: transparent;
+    }
+    .btn-1:hover:before {
+      height: 100%;
+    }
+    .btn-1:hover:after {
+      width: 100%;
+    }
+    .btn-1 span:before,
+    .btn-1 span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: rgb(10, 230, 250);
+      box-shadow:
+       -2px -2px 15px 1px rgba(44,153,174,9),
+       -2px -2px 15px 1px rgba(44,153,174,9);
+      transition: all 0.5s ease;
+    }
+    .btn-1 span:before {
+      width: 2px;
+      height: 0%;
+    }
+    .btn-1 span:after {
+      height: 2px;
+      width: 0%;
+    }
+    .btn-1 span:hover:before {
+      height: 100%;
+    }
+    .btn-1 span:hover:after {
+      width: 100%;
+    }
+    .bar img{
+      width: 40px;
+      display: flex;
+      border-radius: 50%;
+    }
+    .content img{
+      width: 120px;
+      border-radius: 50%;
+      margin: 50px 26em; 
+      justify-content: center;
+    }
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="bar nav">
+      <img src="logo.png" alt="">
+      <h3>DoubH</h3>
+    </div>
+    <div class="">
+      <button class="custom-btn btn-1"><span> <a href="">Log In</a></span></button>
+      <button class="custom-btn btn-1"><span><a href="">Sign Up</a></span></button>
+    </div>
+  </nav>
+
+<!-----------------content---------------->
+  <div class="content">
+    <img src="logo.png" alt="">
+  </div>
+</body>
+</html>
