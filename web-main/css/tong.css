@@ -8,6 +8,7 @@
     --mau7:rgb(115, 72, 72);
     --mau-icon-heaber:rgb(6, 211, 37);
     --mau-icon-heaber1:rgb(248, 10, 10);
+    --mau-left-class1:rgba(54, 53, 53, 0.423);
 }
 *{
     margin: 0;
@@ -140,7 +141,23 @@ display: flex;
 width: 20%;
 height: 1000px;
 background-color: var(--mau5);
-
+}
+.left .class1 li{
+    background-color: var(--mau-left-class1);
+    width: 100%;
+    height: 50px;
+}
+.class1 .class2{
+    color: azure;
+    
+}
+.class2 li{
+    margin-left: 10px;
+}
+.class2 li img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 .head-link .content{
 width: 50%;
